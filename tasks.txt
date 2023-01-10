@@ -8,6 +8,6 @@ Sofiane:
 	Nous connaitre
 Abbas:
 	Acces au comptes.
-	Prédomiciliation.
-	Reglementation.
+	Recrutement.
+	Reglementation. done
 updated...
