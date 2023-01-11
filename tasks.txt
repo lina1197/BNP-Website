@@ -2,12 +2,16 @@ LINA:
 	Devenir client.
 	Nous Connaitre.
 Sofiane: 
-	NAV-bar
-	Footer
-	Page d'accceuil
-	Nous connaitre
+	NAV-bar.
+	Footer.
+	Page d'accueil.
+	Prédomiciliation.
 Abbas:
 	Acces au comptes.
+<<<<<<< HEAD
 	Recrutement.
 	Reglementation. done
 updated...
+=======
+	Reglementation.
+>>>>>>> de420d1b3e1c716549cfd91c7d8e1ed48d08ccc0

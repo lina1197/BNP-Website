@@ -1,11 +1,77 @@
 ﻿body
 {
-    margin-top:100px;
 background-color: #212529;
  color:rgb(255, 255, 255);
  position:center;
  text-align: center;
 }
+/*--------------------------------------head------------------------------------------------------------*/
+.search-bar{
+    width: 100%;
+    height: 50px;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #cac7ff;
+}
+::placeholder{
+    color: #cac7ff;
+}
+.search-bar button img{
+    width: 25px;
+    height:50px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.header a{
+       text-decoration: none;
+       color: #fff;
+       background:  #52C852;
+       padding: 3px 30px;
+       border-radius: 50px;
+       margin-right: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 13px;
+       cursor: pointer;
+       transition: 0.7s;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 100px;
+}
+.header a:hover{
+    background: #fff;
+    color: #009662;
+}
+/*--------------------------------------footer----------------------------------------------------------*/
 .footerf {
     width: 100%;
     bottom: 0;
@@ -17,6 +83,7 @@ background-color: #212529;
     line-height: 20px;
     margin-top:30px;
 }
+
 
 .rowf {
     width: 100%;
@@ -65,18 +132,48 @@ background-color: #212529;
 .columnf p {
     margin-bottom: 10px;
 }
-.bodyf {
-    background: radial-gradient(65.68% 141.79% at 22.34% 39.07%, rgba(0, 150, 98, 0.4) 3.65%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    box-shadow: 0px 5px 4px 5px rgba(0, 150, 98, 0.25);
-    backdrop-filter: blur(10px);
-    /* Note: backdrop-filter has minimal browser support */
-}
+/*-------------------------------------général text parameters----------------------------------*/
 h1{
     color:#00925b;
 }
 th{color:#00925b;}
-.pag{
-    display: inline;
-    align:center;
-    border:1px solid white
+.pagg{
+text-align: center;
+}
+.rowa{border:#00925b;}
+#fgar{margin-top:100px;}
+/*------------sidenav--------------*/
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #009662;
+    transition: 0.5s;
+    z-index: 5;
+}
+#menuBtn{
+    height: 50px;
+    width: 50px;
+    background: #009662;
+    text-align: center;
+    position: fixed;
+    z-index: 6;
+    right: 20px;
+    top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
 }
