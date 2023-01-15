@@ -228,15 +228,24 @@ color:white;}
 display:inline-flex ;
 }
 .inst a:hover{color:orange}
-.icone{width: 40%;
-margin: 3vw;
+.icone{
+    margin-top: 2vw;
+    margin-left: -4vw;
+    width: 40%;
 display: inline-flex;}
-.catégories{text-align: left;}
+.catégories{text-align: right;
+width: 100%;
+justify-content:space-evenly;}
 .catégories ul{
-    display:flexbox;
     text-decoration: none;
     box-decoration-break: none;
-    align-items: flex-start;
+    display: flexbox;
 }
 .catégories li{
-display: flex;}
+display: inline-block;}
+.catégories img{
+    float: right;
+    width:min-content;
+    position:sticky;
+    display:inline;
+}
