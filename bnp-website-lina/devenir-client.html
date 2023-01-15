@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&display=swap" rel="stylesheet">
+  <title>devenir-client</title>
+  <link rel="stylesheet" href="devenir-client.css">
+
+</head>
+
+<body>
+
+  <!-----------------------------------------------------header--------------------->
+  <div class="header">
+    <img src="images-NousConnaitre/logofondt.png" class="logo">
+    <form action="https://www.google.com/search" method="get" class="search-bar">
+      <input type="text" placeholder="search anything" name="q">
+      <button type="submit"><img src="images-NousConnaitre/"></button>
+    </form>
+    <div class="button">
+      <a href="">DEVENIR CLIENT</a>
+      <a href="">ACCES AUX COMPTE</a>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------------->
+  <!------------------------------------------------- sideNav --------------------------------------------------------->
+
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a>Nos locaux</a></li>
+        <li><a>Financement et tarifs</a></li>
+        <li><a>Contact</a></li>
+        <li><a>Aide</a></li>
+        <li><a>Simuler, Evaluer et Comparer</a></li>
+        <li><a>Devenir client</a></li>
+        <li><a>Nous connaitre</a></li>
+        <li><a>Recrutement</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img id="menu" src="images-NousConnaitre/menu.png">
+  </div>
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        menu.src = "images-NousConnaitre/close.png";
+      }
+      else {
+        sideNav.style.right = "-250px";
+        menu.src = "images-NousConnaitre/menu.png";
+      }
+    }
+  </script>
+  <!--------------------------------------------------------------------------->
+
+
+  <div>
+    <div class="cube-bnp"> <img src="./images-NousConnaitre/cube-bnp.png" alt=""></div>
+    <div id="divs">
+      <div id="div1">
+        <h3 class="circle circle1"> <a href="#ACCOMPAGNEMENT">ACCOMPAGNEMENT</a> </h3>
+      </div>
+      <div id="div2">
+        <h3 class="circle circle2" id="div2"> <a href="#SECURITÉ">SECURITÉ</a> </h3>
+      </div>
+      <div id="div3">
+        <h3 class="circle circle3" id="div3"> <a href="#PROXIMITÉ">PROXIMITÉ</a> </h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="trial">
+    <div class="header-DevenirClient" id="SECURITÉ">SÉCURITÉ</div>
+    <div class="SÉCURITÉ">
+      <div class="image1"><img src="./Images-DevenirClient/Communiqués-de-presse.jpg" alt=""></div>
+      <p class="SÉCURITÉ-content">BNP Paribas El Djazair est la filiale algérienne du Groupe BNP Paribas,
+        récompensé
+        à plusieurs reprises par la presse spécialisée ou la profession. <br>
+        Le groupe BNP Paribas bénéficie d’une solidité financière importante, d’un niveau de rentabilité élevé et se
+        situe
+        ainsi parmis les premières banques internationales: 11 em entreprise dans le monde, 1 e entreprise mondiale en
+        terme
+        d’actifs, 7e banque mondiale, Global 2000 Forbes 2010), 9 e banque la plus sure du monde (Global Finance -
+        Octobre
+        2009). <br>
+        Depuis sa creation en 2002, BNP Paribas Ell Djazair est dsormais l’une des banques du secteur privée les plus
+        importantes sur le territoire algérien.
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <div class="header-DevenirClient" id="ACCOMPAGNEMENT">ACCOMPAGNEMENT</div>
+    <div class="ACCOMPAGNEMENT">
+      <div class="image2" id="myimage"><img src="./Images-DevenirClient/BNP_15_05_visuel_site_direct_call_fille_750.jpg"
+          alt=""></div>
+      <div>
+        <p class="ACCOMPAGNEMENT-content">Votre conseiller est à votre disposition pour répondre à vos attentes ou vous
+          proposer des solutions pérsonalisées pour
+          vous aider à réaliser vos projets: comptes cheques ou packs adaptés à vos besoins, épargne, crédit... <br>
+          Aussi notre Centre de Relation Client, DIRECT Call vous accompagne dans vos démarches quotidiennes, demande
+          d’information ou assistance à l’utilisation de produits ou services par mail via les formulaires disponible
+          sur
+          notre
+          site internet.Ou par télephone: <br>
+          >pour les particuliers ou les professionneles: du dimanche au jeudi de 8h30 à 19h, le samedi de 10h à 17h au
+          numéro
+          suivant :021981130 * <br>
+          >Pour les entreprises: du dimanche au jeudi de 8h30 à 19h au numéro suivant :021981131 * <br>
+          *cout d’un appel local.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <div class="header-DevenirClient" id="PROXIMITÉ">PROXIMITÉ</div>
+    <div class="PROXIMITÉ" id="PROXIMITÉ">
+      <div class="image3"><img src="./Images-DevenirClient/Proximite-750x476.jpg" alt=""></div>
+      <div>
+        <p class="PROXIMITÉ-content">Animée d’une puissante dynamique de croissance , BNP Paribas El Djazair renforce
+          aujourd’hui son réseau d’agences et de
+          guichets automatiques de banques couvrant ainsi progressivement le territoire national, avec une implantation
+          dans 19
+          wilayas. <br>
+          choisissez à votre convenance l’agence la plus proche de chez vous et de votre lieu de travail. <br>
+          vous pouvez également accédez à vos comptes 24h/24, 7j/7 et éffectuer vos principales opérations à l’aide des
+          services
+          de banques en ligne. <br>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ASSISTANCE">
+    <!-------------------------------------------SOUSCRIRE EN AGENCE----------------------->
+    <div class="AGENCE">
+      <div style="font-weight:bold">EN AGENCE</div>
+      <button type="button" class="Abtn" onclick="openENAGENCE()"> SOUSCRIRE EN AGENCE</button>
+
+      <form action="" method="post" class="ENAGENCE" id="ENAGENCE">
+        <button type="button" onclick="closeENAGENCE()"><img src="./images-NousConnaitre/close.png" alt=""></button>
+        <p style="font-size: 1.5rem;">SOUSCRIRE EN AGENCE</p>
+        <p>Remplissez le formulaire ci-dessous et un conseiller clientèle vous rappellera dans les 48h pour prendre
+          RDV.</p>
+        <p>Êtes-vous client ? <span style="color:red">*</span></p>
+        <div class="client">
+          <div class="client1"><input type="radio" id="oui" name="Êtes-vous client
+          " value="oui">
+            <label for="oui">oui</label><br>
+          </div>
+          <div class="client2">
+            <input type="radio" id="non" name="Êtes-vous client
+          " value="non">
+            <label for="non">non</label><br>
+          </div>
+        </div>
+
+        <br>
+        <label for="ID">Identifiant client:</label><br>
+        <input type="text" id="ID" name="ID" placeholder="Renseigner votre identifiant à 10 chiffres"><br> <br>
+
+        <div class="civilitéNaissance">
+          <div><label for="civilité">Civilité <span style="color:red">*</span> </label> <br>
+
+            <select name="Civilité" id="Civilité">
+              <option value="choisir">choisir</option>
+              <option value="M.">M.</option>
+              <option value="Mme">Mme</option>
+              <option value="Mlle">Mlle</option>
+            </select> <br>
+          </div>
+
+
+          <div>
+            <label for="Date de naissance">Date de naissance <span style="color:red">*</span>
+            </label> <br>
+            <input type="date" name="Date de naissance" id="Date de naissance">
+          </div>
+        </div>
+        <br>
+        <div class="fullName">
+          <div> <label for="lname">Prénom <span style="color:red">*</span></label> <br>
+            <input type="text" id="lname" name="lname"> <br>
+          </div>
+          <div class="LastName"><label for="fname">Nom <span style="color:red">*</span></label><br>
+            <input type="text" id="fname" name="fname">
+          </div>
+
+        </div> <br>
+
+        <p>Je souhaite prendre rdv dans mon agence habituelle <span style="color:red">*</span></p>
+
+        <div class="MonAgence">
+          <div><input type="radio" id="oui" name="AgenceHabituelle
+              " value="oui">
+            <label for="oui">oui</label><br>
+          </div>
+          <div>
+            <input type="radio" id="non" name="AgenceHabituelle
+              " value="non">
+            <label for="non">non</label><br>
+          </div>
+        </div>
+
+        <div><label for="Agence">Agence</label> <br>
+
+          <select name="Agence" id="Agence">
+            <option value="choisissez ci-dessous">choisissez ci-dessous</option>
+            <option value="Aïn Benian">Aïn Benian</option>
+            <option value="Aïn Naadja">Aïn Naadja</option>
+            <option value="Aïn Romana">Aïn Romana</option>
+            <option value="Aïn Turk">Aïn Turk</option>
+            <option value="Akbou">Akbou</option>
+            <option value="Ali Khoudja">Ali Khoudja</option>
+            <option value="Annaba ALN">Annaba ALN</option>
+            <option value="Annaba Ben Boulaid">Annaba Ben Boulaid</option>
+            <option value="Arzew">Arzew</option>
+            <option value="Bab Essebt">Bab Essebt</option>
+            <option value="Bab Ezzouar">Bab Ezzouar</option>
+            <option value="Baba Hassen">Baba Hassen</option>
+            <option value="Beaulieu">Beaulieu</option>
+            <option value="Béjaia">Béjaia</option>
+            <option value="Béjaïa ALN">Béjaïa ALN</option>
+            <option value="Belfort">Belfort</option>
+            <option value="Ben Aknoun">Ben Aknoun</option>
+            <option value="Bir Khadem">Bir Khadem</option>
+            <option value="Blida">Blida</option>
+            <option value="Bouloughine">Bouloughine</option>
+            <option value="Bordj bou Arreridj">Bordj bou Arreridj</option>
+            <option value="Bordj El Kiffan">Bordj El Kiffan</option>
+
+
+
+
+          </select> <br>
+        </div>
+
+        <button>suivant</button>
+
+
+
+      </form>
+      <script>
+        let ENAGENCE = document.getElementById("ENAGENCE")
+        function openENAGENCE() {
+          ENAGENCE.classList.add("open-ENAGENCE")
+        }
+        function closeENAGENCE() {
+          ENAGENCE.classList.remove("open-ENAGENCE")
+        }
+      </script>
+      <p>Vous préférez venir en agence ? <br>
+        Remplissez le formulaire et nous vous proposerons un rendez-vous en moins de 48 H.</p>
+    </div>
+    <!------------------------------INFORMATIONS--------------------------------------->
+    <div class="INFORMATIONS">
+      <div style="font-weight:bold ;">POUR PLUS D'INFORMATIONS</div>
+      <div style="font-weight:bold"> <button type="button" onclick="openconseiller()">ÊTRE RAPPELÉ PAR UN
+          CONSEILLER</button> </div>
+      <p>Vous pouvez également joindre DIRECT Call du dimanche au jeudi de 8h30 à 19.</p>
+
+      <form action="" method="post" class="conseiller" id="conseiller">
+        <button type="button" onclick="closeconseiller()"><img src="./images-NousConnaitre/close.png" alt=""> </button>
+
+        <p style="font-size: 1.5rem;">ÊTRE RAPPELÉ PAR UN CONSEILLER</p>
+        <p>Remplissez le formulaire ci-dessous et un conseiller clientèle vous rappellera dans les 48h.</p>
+        <p>Êtes-vous client ? <span style="color:red">*</span></p>
+        <div class="client">
+          <div class="client1"><input type="radio" id="oui" name="Êtes-vous client
+    " value="oui">
+            <label for="oui">oui</label><br>
+          </div>
+          <div class="client2">
+            <input type="radio" id="non" name="Êtes-vous client
+    " value="non">
+            <label for="non">non</label><br>
+          </div>
+        </div>
+
+        <br>
+        <label for="ID">Identifiant client:</label><br>
+        <input type="text" id="ID" name="ID" placeholder="Renseigner votre identifiant à 10 chiffres"><br> <br>
+
+        <div class="civilitéNaissance">
+          <div><label for="civilité">Civilité <span style="color:red">*</span> </label> <br>
+
+            <select name="Civilité" id="Civilité">
+              <option value="choisir">choisir</option>
+              <option value="M.">M.</option>
+              <option value="Mme">Mme</option>
+              <option value="Mlle">Mlle</option>
+            </select> <br>
+          </div>
+
+
+          <div>
+            <label for="Date de naissance">Date de naissance <span style="color:red">*</span>
+            </label> <br>
+            <input type="date" name="Date de naissance" id="Date de naissance">
+          </div>
+        </div>
+        <br>
+        <div class="fullName">
+          <div> <label for="lname">Prénom <span style="color:red">*</span></label> <br>
+            <input type="text" id="lname" name="lname"> <br>
+          </div>
+          <div class="LastName"><label for="fname">Nom <span style="color:red">*</span></label><br>
+            <input type="text" id="fname" name="fname">
+          </div>
+
+        </div> <br>
+        <button>suivant</button>
+      </form>
+      <script>
+        let conseiller = document.getElementById("conseiller")
+        function openconseiller() {
+          conseiller.classList.add("open-conseiller")
+        }
+        function closeconseiller() {
+          conseiller.classList.remove("open-conseiller")
+        }
+      </script>
+
+    </div>
+  </div>
+
+  <div class="ASSISTANCE2">
+    <p>vous pouvez également joindre <span style="font-weight:bold">DIRECT Call</span> du dimanche au jeudi de 8H30 à
+      19H, le samedi de 8H30 à 17H au <br> <br>
+      <span style="font-weight:bold; color:orange; font-size:1.8rem"> 021 98 11 30 *</span> <br>
+      <span style="color:orange; font-size:0.8rem">* cout d'un appel local</span>
+    </p>
+  </div>
+
+  <!----------------------------------------------------footer--------------------------->
+  <footer>
+    <div class="SuivezNous">
+      <h3>SUIVEZ NOUS SUR:</h3> <br>
+      <img src="images-NousConnaitre/twitter.png" class="sociale-media">
+      <img src="images-NousConnaitre/facebook.png" class="sociale-media">
+      <img src="images-NousConnaitre/instagram.png" class="sociale-media">
+      <img src="images-NousConnaitre/linkedin.png" class="sociale-media">
+      <img src="images-NousConnaitre/youtube.png" class="sociale-media">
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="images-NousConnaitre/logofondt.png" class="logo">
+        <p>dans un monde qui change, nous accompagnons tous nos clients
+          et nos collaborateurs dans la construction d'un monde durable.
+        </p>
+      </div>
+
+      <div class="column column2">
+        <ul>
+          <li><a href="#">TROUVER UNE AGENCE</a></li>
+          <li><a href="#">RENCONTREZ NOUS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">AIDE</a></li>
+        </ul>
+      </div>
+      <div class="column column3 ">
+        <h3>OTHER LINKS</h3>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique Cookies</a></li>
+          <li><a href="#">Données personnelles</a></li>
+          <li><a href="#">Espace press</a></li>
+          <li><a href="#">BNPPARIBAS.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
