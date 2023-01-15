@@ -1,0 +1,11 @@
+LINA: 
+	Devenir client.
+	Nous Connaitre.
+Sofiane: 
+	NAV-bar.
+	Footer.
+	Page d'accueil.
+	Prédomiciliation.
+Abbas:
+	Acces au comptes.
+	Reglementation.
