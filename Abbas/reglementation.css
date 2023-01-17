@@ -1,0 +1,261 @@
+﻿body{
+    background-color: #212529;
+    color:white;
+}
+/*--------------------------------------footer----------------------------------------------------------*/
+.footerf {
+    width: 100%;
+    height: min-content;
+    bottom: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(0,150,98,1) 68%, rgba(31,177,126,1) 100%);
+    color: #fff;
+    padding: 20px 0 20px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top:30px;
+    display: block;
+}
+
+
+.rowf {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: min-content;
+}
+
+.columnf {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.logof {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.columnf h3 {
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.columnf ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+    .columnf ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.secondf {
+    margin-top: 45px;
+}
+
+.sociale-mediaf {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.columnf p {
+    margin-bottom: 10px;
+}
+/*-------------------------------------général text parameters----------------------------------*/
+h1{
+    text-align: center;
+    color:#00925b;
+}
+p{
+    text-align: center;
+}
+th{color:#00925b;}
+.pagg{
+text-align: center;
+}
+.rowa{border:#00925b;}
+.blur{background-image: radial-gradient(rgba(0, 150, 98, 0.8) 3.65%, rgba(255, 255, 255, 0) 100%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) ;
+    border-radius: 50px;
+    box-shadow: 0px 5px 4px 5px rgba(0, 150, 98, 0.25);}
+/*------------sidenav--------------*/
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #009662;
+    transition: 0.5s;
+    z-index: 5;
+    display: block;
+}
+#menuBtn{
+    height: 50px;
+    width: 50px;
+    background: #009662;
+    text-align: center;
+    position: fixed;
+    z-index: 6;
+    right: 20px;
+    top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/*-----------------------head---------------------------*/
+.logo{
+    width:40%
+}
+.headerr{display:block;
+padding: 1.5vw;
+justify-content: start;
+text-decoration:none;
+box-decoration-break: none;
+}
+.headerr li{
+    text-decoration: none;
+}
+.buttom{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background:  #52C852;
+    padding: 3px 30px;
+    border-radius: 50px;
+    margin-right: 1vw;
+    font-size: 1.6vw;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.7s;
+    float: right;
+}
+.buttom:hover{
+    background: #fff;
+    color: #009662;
+}
+
+.icone-rech{
+    z-index: 1000;
+    position: relative;
+    background-color: transparent;
+    margin-top: -4vw;
+    margin-left:15vw;
+}
+.rech{
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    float: right;
+}
+.rech input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 1.5vw;
+    color: #cac7ff;
+
+}
+.search-bar{
+    display: inline-block;
+    height: 4vw;
+    float:inline-start
+}
+.boutons{
+    display: inline-block;
+    float:inline-end;
+    display: inline;
+}
+/*******************connexion**********************************/
+.connexion{
+    font-size: large;
+    float:left;
+    width: 45%;
+    justify-content: space-between;
+    text-align: center;
+    background-image: radial-gradient(rgba(0, 150, 98, 0.8) 3.65%, rgba(255, 255, 255, 0) 100%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) ;
+    border-radius: 50px;
+    box-shadow: 0px 5px 4px 5px rgba(0, 150, 98, 0.25);
+    padding: 3vw;
+    padding-bottom: 2vw;
+
+}
+.connexion input{ margin: 1.5vw;
+background-color: #212529;
+color: white;
+}
+.connexion button{ margin:1.5vw;
+background-color: #52C852;
+color:white;}
+.inst{
+    width: 45%;
+    text-align: center;
+    background-image: radial-gradient(rgba(0, 150, 98, 0.8) 3.65%, rgba(255, 255, 255, 0) 100%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) ;
+    border-radius: 50px;
+    box-shadow: 0px 5px 4px 5px rgba(0, 150, 98, 0.25);
+    float:right;
+    height: inherit;
+    padding:2vw;
+    }
+.inst h2{color:#00925b}
+.inst a{color:white;
+display:inline-flex ;
+}
+.inst a:hover{color:orange}
+.inst button{background-color: #52C852;
+color:white;}
+.icone{
+    margin-top: 2vw;
+    margin-left: -4vw;
+    width: 40%;
+display: inline-flex;}
+.catégories{text-align: right;
+width: 100%;
+justify-content:space-evenly;}
+.catégories ul{
+    text-decoration: none;
+    box-decoration-break: none;
+    display: flexbox;
+}
+.catégories li{
+display: inline-block;}
+.catégories img{
+    float: right;
+    width:min-content;
+    position:sticky;
+    display:inline;
+}
+@media only screen and (max-width=700px) {
+    .inst{display: block;
+    width:90%}
+    .connexion{display: block;
+        width:90%}
+    
+}

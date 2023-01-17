@@ -8,10 +8,4 @@ Sofiane:
 	Prédomiciliation.
 Abbas:
 	Acces au comptes.
-<<<<<<< HEAD
-	Recrutement.
-	Reglementation. done
-updated...
-=======
 	Reglementation.
->>>>>>> de420d1b3e1c716549cfd91c7d8e1ed48d08ccc0
