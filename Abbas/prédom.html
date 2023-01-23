@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE: html>
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="bootstrap.css" />
 <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
 <link rel="stylesheet" href="reglementation.css" />
+<link rel="stylesheet" href="scss/bnp.css">
 </head>
 <body>
 <!--------------------------------header------------------------------------------>
@@ -30,48 +31,76 @@
   </div>
 </nav>
 <!------------------- sideNav ---------------->
-  <div id="sideNav">
-    <nav>
-        <ul>
-            <li><a href="site en construction.html" >NOS LOCEAUX</a></li>
-            <li><a href="site en construction.html">FINANCEMENT ET TARRIFS</a></li>
-            <li><a href="site en construction.html">CONTACT</a></li>
-            <li><a href="site en construction.html">AIDE</a></li>
-            <li><a href="site en construction.html">SIMULER, EVALUER ET COMPARER</a></li>
-            <li><a href="site en construction.html">DEVENIR CLIENT</a></li>
-            <li><a href="site en construction.html">NOUS CONNAITRE</a></li>
-            <li><a href="site en construction.html">RECRUTEMENT</a></li>
-        </ul>
-    </nav>
+<div id="sideNav">
+  <nav>
+      <ul>
+
+          <li><a href="index.html">PARTICULIER</a></li>
+          <li><a href="index.html">PROFESIONNELS</a></li>
+          <li><a href="index.html">ENTREPRISES</a></li>
+          <li><a href="./bnp-website-lina/devenir-client.html">DEVENIR CLIENT</a></li>
+          <li><a href="./bnp-website-Abbas/prèdom.html">PREDOMICILIATION</a></li>
+          <li><a href="./Abbas/Reglementation.html">REGLEMENTATION</a></li>
+          <li><a href="./bnp-website-lina/Nous-connaitre.html">NOUS CONNAITRE</a></li>
+          <li><a href="index.html">ACCES AU COMPTE</a></li>
+          <li><a href="index.html">FINANCEMENT ET TARRIFS</a></li>
+          <li><a href="not-found.html">CONTACT</a></li>
+          <li><a href="not-found.html">AIDE</a></li>
+          <li><a href="not-found.html">RECRUTEMENT</a></li>
+      </ul>
+  </nav>
 </div>
 <div id="menuBtn">
-    <img  id="menu" src="images/menu.png" >
+  <img id="menu" src="images/menu.png">
 </div>
 <script>
-    var menuBtn = document.getElementById("menuBtn")
-    var sideNav = document.getElementById("sideNav")
-    var menu = document.getElementById("menu")
-    menuBtn.onclick=function(){
-        if(sideNav.style.right=="-250px"){
-            sideNav.style.right="0";
-            menu.src = "images/close.png";
-        }
-        else{
-              sideNav.style.right="-250px";
-              menu.src = "images/menu.png";
-        }
-    }
+  var menuBtn = document.getElementById("menuBtn")
+  var sideNav = document.getElementById("sideNav")
+  var menu = document.getElementById("menu")
+  menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "images/close.png";
+      }
+      else {
+          sideNav.style.right = "-250px";
+          menu.src = "images/menu.png";
+      }
+  }
 </script>
+<!------------------------prédom---------------------------->
 <h1 style="text-align:center">Prédomiciliation Pour le commerce éxterieur</h1>
 <div class="container">
-  <form class="connexion">
-    <h2>Authentification Entreprises/Professionnels et Particuliers</h2>
-    Nom d'utilisateur (11 premiers chiffres de votre numéro de compte bancaire)<br><br><input methode="get" type="text" placeholder="Votre numéro client"><br><br>
-    Mot de passe<br> <br><input methode="get" type="password" placeholder="Votre mot de passe"><br><br>
-    <br><button>Submit</button><a href="site_en_construction.html">Mot de passe oublié?</a><br>
+  <div class="row">
+    <div class="col">
+      <div class="connexion">
+        <form>
+        <p>Votre numéro client</p><br>
+        <input type="firstname" value="" required /><br>
+        <p>Votre mot de passe</p><br>
+        <input type="password" value="" required /><br>
+        <input type="button" name="button" value="Submit" /><br><br>
+        <a href="site en construction.html">Mot de passe Oublié?</a>
+        </form>
+      </div>
+    <script>
+      window.onload = function () {
+        var form = document.getElementById('theForm');
+        form.button.onclick = function (){
+          for(var i=0; i < form.elements.length; i++){
+            if(form.elements[i].value === '' && form.elements[i].hasAttribute('required')){
+              alert('There are some required fields!');
+              return false;
+            }
+          }
+          form.submit();
+        }; 
+      };
+    </script>
 
-  </form>
-  <div class="inst">
+    </div>
+    <div class="col">
+      <div class="inst">
     <h2>Première visite ?</h2>
     <h3>Pour les Entreprises et les Professionnels:</h3>
     <p>Pour vous inscrire, vous devez vous munir de votre numéro d’Identification Fiscale, du numéro de Registre du Commerce ainsi que votre numéro de compte bancaire sur 11 chiffres.</p>
@@ -90,47 +119,65 @@
             </ul>
          </div>
   
+      </div>
     </div>
   </div>
+</div>
     
   </div>
 </div>
 
 </body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer class="footerf">
-  <div class="rowf">
-      <div class="columnf">
-          <img src="images/logo.png" class="logof">
-          <p>
-              dans un monde qui change, nous accompagnons tou nos clients
-              et nos collaborateurs dans la constructions d'un monde durable
-          </p>
-      </div>
-      <div class="columnf">
-          <h3>links</h3>
-          <ul>
-              <li><a href="site en construction.html">Mentions légale</a></li>
-              <li><a href="site en construction.html">Espace press</a></li>
-              <li><a href="site en construction.html">BNPPARIBAS.com</a></li>
-          </ul>
-      </div>
-      <div class="columnf secondf">
-          <ul>
-              <li><a href="site en construction.html">trouver une agense</a></li>
-              <li><a href="site en construction.html">rencontrez nous</a></li>
-              <li><a href="site en construction.html">contacts</a></li>
-              <li><a href="site en construction.html">aide</a></li>
-          </ul>
-      </div>
-      <div class="columnf">
-          <h3>suivez nous sur</h3>
-          <p> <img src="images/twitter.png" class="sociale-media">twitter</p>
-          <p> <img src="images/facebook.png" class="sociale-media">facebook</p>
-          <p> <img src="images/instagram.png" class="sociale-media">instagram</p>
-          <p> <img src="images/linkedin.png" class="sociale-media">linkedin</p>
-          <p> <img src="images/youtube.png" class="sociale-media">youtube</p>
-      </div>
-  </div>
-</footer>
+<footer>
+  <section class="SuivezNous">
+   <h3 class="h3Footer">SUIVEZ NOUS SUR:</h3>
+   <div class="socialMedia-icons" style="font-size: 1.2rem;">
+    <a href="https://web.facebook.com/BNPParibasElDjazair/?_rdc=1&_rdr"><i class="fa-brands fa-square-facebook"></i></a>
+    <a href="https://dz.linkedin.com/company/bnp-paribas-eldjaza%C3%AFr"><i class="fa-brands fa-linkedin"></i> </a>
+    <a href="https://www.youtube.com/@bnpparibaseldjazair7915/featured"><i class="fa-brands fa-square-youtube"></i></a>
+    <a href="NotFound.html"><i class="fa-brands fa-instagram"></i></a>
+    <a href="NotFound.html"><i class="fa-brands fa-square-twitter"></i></a>
+   </div>
+  </section>
+ 
+ 
+  <div class="Logo-L"><img src="../images/logo.png" alt=""></div>
+ 
+  <section class="containerL">
+   <div class="ABOUT">
+    <h3>A PROPOS DE NOUS:</h3>
+    <p>Dans un monde qui change, nous accompagnons tous nos clients
+     et nos collaborateurs dans la construction d'un monde durable.
+    </p>
+   </div>
+ 
+   <div class="SERVICES">
+    <h3>SERVICES</h3>
+    <ul>
+     <li><a href="#">TROUVER UNE AGENCE</a></li>
+     <li><a href="#">RENCONTREZ NOUS</a></li>
+     <li><a href="#">CONTACT</a></li>
+     <li><a href="#">AIDE</a></li>
+    </ul>
+   </div>
+   <div class="LINKS">
+    <h3>LINKS</h3>
+    <ul>
+     <li><a href="https://www.bnpparibas.dz/mentions-legales/">MENTIONS LÉGALES</a></li>
+     <li><a href="#">POLITIQUES COOKIES</a></li>
+     <li><a href="#">DONNÉES PERSONNELLES</a></li>
+     <li><a href="https://www.bnpparibas.dz/nous-connaitre/actualites-et-presse/">ESPACE PRESS</a></li>
+     <li><a href="https://group.bnpparibas/">BNPPARIBAS.COM</a></li>
+    </ul>
+   </div>
+  </section>
+  <section>
+ 
+   <div class="copyright">&copy BNP Paribas dz -2023</div>
+ 
+ 
+  </section>
+ 
+ </footer>
+
 </html>
