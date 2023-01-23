@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="./css-lina/Nous-connaitre.css">
+
+  <title>Nous connaitre</title>
+</head>
+
+<body>
+
+  <!-----------------------------------------------------header------------------------------------------------------->
+  <div class="header">
+    <img src="images-NousConnaitre/logofondt.png" class="logo">
+    <form action="https://www.google.com/search" method="get" class="search-bar">
+      <input type="text" placeholder="search anything" name="q">
+      <button type="submit"><img src="images-NousConnaitre/"></button>
+    </form>
+  </div>
+
+
+  <!---------------------------------------------------slider---------------------------------------------------------->
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slides">
+        <div id="slides__1" class="slide">
+          <h1 class="slideHeader">BNP PARIBAS EL DJAZAIR,
+            LA BANQUE D'UN MONDE
+            QUI CHANGE
+          </h1>
+          <div class="slideLink"><a href="NotFound.html">EN SAVOIR PLUS</a></div>
+          <span class="slide1"><img src="./images-NousConnaitre/instit_7_2000.jpg" class="image_full">
+            <img src="./images-NousConnaitre/instit_7_750.jpg" class="image_mobile">
+          </span>
+          <a class="slide__prev" href="#slides__5" title="Next"></a>
+          <a class="slide__next" href="#slides__2" title="Next"></a>
+        </div>
+        <div id="slides__2" class="slide">
+          <h1 class="slideHeader">ACTUALITÉ&PRESSE</h1>
+          <div class="slideLink"><a href="NotFound.html">EN SAVOIR PLUS</a></div>
+
+          <span class="slide2"><img src="./images-NousConnaitre/instit_3_2000.jpg" class="image_full">
+            <img src="./images-NousConnaitre/instit_3_750.jpg" class="image_mobile">
+
+          </span>
+          <a class="slide__prev" href="#slides__1" title="Prev"></a>
+          <a class="slide__next" href="#slides__3" title="Next"></a>
+        </div>
+        <div id="slides__3" class="slide">
+          <h1 class="slideHeader">COMMUNICATION FINANCIÉRE
+          </h1>
+          <div class="slideLink"><a href="NotFound.html">EN SAVOIR PLUS</a></div>
+
+          <span class="slide3"><img src="./images-NousConnaitre/instit_2_2000.jpg" class="image_full">
+            <img src="./images-NousConnaitre/instit_2_750.jpg" class="image_mobile">
+
+          </span>
+          <a class="slide__prev" href="#slides__2" title="Prev"></a>
+          <a class="slide__next" href="#slides__4" title="Next"></a>
+        </div>
+        <div id="slides__4" class="slide">
+          <h1 class="slideHeader">ACTIVITÉS ET FILIALES
+          </h1>
+          <div class="slideLink"><a href="">EN SAVOIR PLUS</a></div>
+
+          <span class="slide4"><img src="./images-NousConnaitre/instit_5_2000.jpg" class="image_full">
+            <img src="./images-NousConnaitre/instit_5_750.jpg" class="image_mobile">
+
+          </span>
+          <a class="slide__prev" href="#slides__3" title="Prev"></a>
+          <a class="slide__next" href="#slides__5" title="Prev"></a>
+        </div>
+        <div id="slides__5" class="slide">
+          <h1 class="slideHeader">LE GROUPE BNP PARIBAS
+          </h1>
+          <div class="slideLink"><a href="NotFound.html">EN SAVOIR PLUS</a></div>
+
+          <span class="slide5"><img src="./images-NousConnaitre/instit_6_2000 (1).jpg" class="image_full">
+            <img src="./images-NousConnaitre/instit_6_750.jpg" class="image_mobile">
+
+          </span>
+          <a class="slide__prev" href="#slides__4" title="Prev"></a>
+          <a class="slide__next" href="#slides__1" title="Prev"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!------------------------------------------------- sideNav --------------------------------------------------------->
+
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="../bnp/BNP-Website/acceuil.css">PARTICULIERS</a></li>
+        <li><a href="../bnp/BNP-Website/acceuil.css">PROFESSIONNELS</a></li>
+        <li><a href="../bnp/BNP-Website/acceuil.css">ENTREPRISES</a></li>
+        <li><a href="devenir-client.html">DEVENIR CLIENT</a></li>
+        <li><a href="../Abbas/prédom.html">PREDOMICILIATION</a></li>
+        <li><a href="../Abbas/Reglementation.html">REGLEMENTATION</a></li>
+        <li><a href="Nous-connaitre.html">NOUS CONNAITRE</a></li>
+        <li><a href="../Abbas/accés aux comptes.html">ACCES AU COMPTE</a></li>
+        <li><a href="NotFound.html">FINANCEMENT ET TARIFS</a></li>
+        <li><a href="NotFound.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img id="menu" src="images/menu.png">
+  </div>
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+      }
+      else {
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+      }
+    }
+  </script>
+
+  <!----------------------------------------------------content-------------------------------------------------------->
+
+  <div class="reveal">
+    <h1 class="header1">BNP PARIBAS EL DJAZAIR, <br> La banque d'un monde qui change </h1>
+    <div class="section1">
+      <div class="section1-image"> <img src="./images-NousConnaitre/instit_7_750.jpg" alt=""></div>
+      <div>
+        <p class="section1-content"> Étre la banque d’un monde qui change est plus qu’un slogan, c’est une
+          promesse que nous
+          tenons au quotidien
+          <br>
+          <span style="font-weight:bold">Vis-à-vis de nos clients</span>, en s’efforçant d’être les premiers à
+          maitriser
+          les techniques et les métiers
+          d’avenir pour les mettre à leur service. <br>
+          <span style="font-weight:bold">Vis-à-vis de nos salariés</span> , en favorisant la responsabilité
+          individuelle
+          et des structures hiérarchiques
+          simples,souples, permettant la proximité des relations.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="reveal">
+    <h1 class="header2">ACTUALITÉ & PRESSE </h1>
+    <div class="section2">
+      <div class="section2-image"> <img src="./images-NousConnaitre/instit_3_750.jpg" alt=""></div>
+
+      <div>
+        <p class="section2-content"> Actualités <br>
+          texte dernière actu <br>
+          LIEN: voir toutes les actus>> <br>
+          Communiqués de presse <br>
+          dernier com presse <br>
+          LIEN: voir tous les communiqués de presse>> <br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <h1 class="header3">COMMUNICATION FINANCIÉRE </h1>
+    <div class="section3">
+      <div class="section3-image"> <img src="./images-NousConnaitre/instit_2_750.jpg" alt=""></div>
+
+      <div>
+        <p class="section3-content"> La communication financière est un élement clé de la transparence du marché et
+          constitue une condition essentielle pour
+          acroitre la confiance de nos clients, la crédibilité et la qualité d’une place financière.
+          BNP Paribas El Djazair met à votre disposition un ensemble de documents financiers disponible en version
+          électronique
+          pour téléchargement.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <h1 class="header4">ACTIVITÉS & FILIALES </h1>
+    <div class="section4">
+      <div class="section4-image"> <img src="./images-NousConnaitre/instit_5_750.jpg" alt=""></div>
+
+      <div>
+        <p class="section4-content"> Toute l’expertise et le savoir faire de ses filiales et métiers spécialisés pour
+          répondre aux besoins spécifiques de chacun de ses clients <br>
+          Pour mieux satisfaire les besoins de ses clients, BNP Paribas El Djazair met a leur disposition un large
+          réseau de 71 agences et 13 centres d’affaires, Direct Call, un centre de relation client dédié, une offre
+          innovante et personalisée. <br>
+          En savoir plus sur l’activité et les filiales BNP El Djazair.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <h1 class="header5">LE GROUPE BNP PARIBAS </h1>
+    <div class="section5">
+      <div class="section5-image"> <img src="./images-NousConnaitre/instit_6_750.jpg" alt=""></div>
+
+      <div>
+        <p class="section5-content"> <span style="font-weight:bold;">BNP Paribas, leader européen d’envergure
+            mondiale</span> <br>
+
+          Bnp Paribas (www.bnpparibas.com) a une présence dans 80 pays avec près de 190 000 collaborateurs, dont plus
+          de
+          145 000 en Europe. <br>
+          le groupe détient des positions clés dans ses trois domaines d’activité: Retail Banking, Investment
+          Solutions
+          et Corporate & Investment Banking. <br>
+          En Europe, le groupe a quatre marchés domestiques( la Belgique, la France, l’italie et le Luxembourg) et BNP
+          Paribas Personal Finance et numéro 1 du crédit au particulier. <br>
+          <a href="#">En savoir plus sur le Groupe BNP Paribas.</a> <br>
+          <a href="www.bnpparibas.com" target="_blank">www.bnpparibas.com</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!----------------------------------------------------footer--------------------------------------------------------->
+  <footer>
+    <section class="SuivezNous">
+      <h3 class="h3Footer">SUIVEZ NOUS SUR:</h3>
+      <div class="socialMedia-icons" style="font-size: 1.2rem;">
+        <a href="https://web.facebook.com/BNPParibasElDjazair/?_rdc=1&_rdr"><i
+            class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://dz.linkedin.com/company/bnp-paribas-eldjaza%C3%AFr"><i class="fa-brands fa-linkedin"></i> </a>
+        <a href="https://www.youtube.com/@bnpparibaseldjazair7915/featured"><i
+            class="fa-brands fa-square-youtube"></i></a>
+        <a href="NotFound.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="NotFound.html"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </section>
+
+
+    <div class="Logo-L"><img src="./images-NousConnaitre/logofondt.png" alt=""></div>
+
+    <section class="containerL">
+      <div class="ABOUT">
+        <h3>A PROPOS DE NOUS:</h3>
+        <p>Dans un monde qui change, nous accompagnons tous nos clients
+          et nos collaborateurs dans la construction d'un monde durable.
+        </p>
+      </div>
+
+      <div class="SERVICES">
+        <h3>SERVICES</h3>
+        <ul>
+          <li><a href="#">TROUVER UNE AGENCE</a></li>
+          <li><a href="#">RENCONTREZ NOUS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">AIDE</a></li>
+        </ul>
+      </div>
+      <div class="LINKS">
+        <h3>LINKS</h3>
+        <ul>
+          <li><a href="https://www.bnpparibas.dz/mentions-legales/">MENTIONS LÉGALES</a></li>
+          <li><a href="#">POLITIQUES COOKIES</a></li>
+          <li><a href="#">DONNÉES PERSONNELLES</a></li>
+          <li><a href="https://www.bnpparibas.dz/nous-connaitre/actualites-et-presse/">ESPACE PRESS</a></li>
+          <li><a href="https://group.bnpparibas/">BNPPARIBAS.COM</a></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+
+      <div class="copyright">&copy BNP Paribas dz -2023</div>
+
+
+    </section>
+
+  </footer>
+
+  <!------------------------------------ fade-in/fade-out js for content---------------------------------------------->
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal');
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        }
+        else {
+          reveals[i].classList.remove('active');
+
+        }
+      }
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

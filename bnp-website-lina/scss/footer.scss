@@ -1,0 +1,199 @@
+$main-color: linear-gradient(40deg, rgba(2, 0, 36, 1) 0%, rgba(0, 150, 98, 1) 68%, rgba(31, 177, 126, 1) 100%);
+
+@mixin respond($breakpoint) {
+ @if($breakpoint==small) {
+  @media only screen and (max-width:480px) {
+   @content
+  }
+ }
+
+ @if($breakpoint==medium) {
+  @media only screen and (min-width:481px) and (max-width:768px) {
+   @content
+  }
+ }
+}
+
+//css-footer
+footer {
+ margin-top: 30px;
+ width: 100%;
+ background-image: $main-color;
+ color: #fff;
+ font-size: 1rem;
+ line-height: 1.6;
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+
+
+
+ .SuivezNous {
+  border-bottom: solid 2px white;
+
+  .h3Footer {
+   text-align: center;
+   margin-bottom: 10px;
+  }
+
+  .socialMedia-icons {
+   bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+   width: 20%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+
+   a {
+    color: white;
+   }
+
+
+
+   @include respond(small) {
+    width: 55%;
+   }
+
+   @include respond(medium) {
+    width: 30%;
+   }
+  }
+ }
+
+ .Logo-L {
+  @include respond(small) {
+   display: flex;
+   justify-content: center;
+  }
+
+  @include respond(medium) {
+   display: flex;
+   justify-content: center;
+  }
+
+  img {
+   margin-top: 10px;
+   width: 15vw;
+
+   @include respond(small) {
+    width: 35vw;
+   }
+
+   @include respond(medium) {
+    width: 40vw;
+   }
+  }
+ }
+
+ .containerL {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(small) {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   text-align: center;
+  }
+
+  @include respond(medium) {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   text-align: center;
+
+  }
+
+  .ABOUT {
+   max-width: 20%;
+
+   @include respond(small) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 50%;
+
+   }
+
+   @include respond(medium) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 50%;
+
+   }
+
+
+
+   p {
+    font-size: 1rem;
+   }
+  }
+
+  .SERVICES {
+
+   @include respond(small) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+
+   @include respond(medium) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+
+   ul {
+    list-style-type: none;
+    line-height: 1.6;
+   }
+
+   a {
+    color: white;
+    text-decoration: none;
+   }
+
+   a:hover {
+    color: orange;
+    text-decoration: none;
+   }
+
+
+  }
+
+  .LINKS {
+   @include respond(small) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+   }
+
+   @include respond(medium) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+   }
+
+   ul {
+    list-style-type: none;
+    line-height: 1.6;
+   }
+
+   a {
+    color: white;
+    text-decoration: none;
+   }
+
+   a:hover {
+    color: orange;
+    text-decoration: none;
+   }
+  }
+
+ }
+
+ .copyright {
+  text-align: center;
+ }
+
+}
