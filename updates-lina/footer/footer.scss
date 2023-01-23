@@ -65,11 +65,7 @@ footer {
   }
  }
 
-<<<<<<< HEAD
  .logo {
-=======
- .Logo-L {
->>>>>>> a3fdae78d581baf971df52cb470e06462ba84e5c
   @include respond(small) {
    display: flex;
    justify-content: center;
@@ -160,12 +156,8 @@ footer {
    }
   }
 
-<<<<<<< HEAD
   .SERVICES2 {
     min-width: 22vw;
-=======
-  .SERVICES {
->>>>>>> a3fdae78d581baf971df52cb470e06462ba84e5c
    @include respond(small) {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -198,17 +190,11 @@ footer {
    @include respond(small) {
     margin-top: 10px;
     margin-bottom: 20px;
-<<<<<<< HEAD
     
    }
 
    @include respond(medium) {
     min-height: 20vh;
-=======
-   }
-
-   @include respond(medium) {
->>>>>>> a3fdae78d581baf971df52cb470e06462ba84e5c
     margin-top: 10px;
     margin-bottom: 20px;
    }

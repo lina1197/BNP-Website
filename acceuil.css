@@ -443,8 +443,7 @@
     margin-bottom: 30px;
     position: relative;
 }
-input:not(.check-box input),
-input:not(.form-button){
+input:not(.check-box input){
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -655,31 +654,22 @@ hr{
 
      .big-div{
         width: 100%;
-        height: 50%;
+        height: auto;
         background-image: radial-gradient(rgba(0, 150, 98, 0.8) 3.65%, rgba(255, 255, 255, 0) 100%);
         position: relative;
         display: flex;
-        align-items: center;
+        
         justify-content: space-between;
-        /* position: absolute; */
         margin-top: 4%;
         flex-wrap: wrap;  
      }
-    /* .table-container{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        margin-top: 4%;
-        flex-wrap: wrap;
-    } */
+
 
     .white-rect1, .white-rect2{
          flex-basis: 50%;
          background: radial-gradient(65.68% 141.79% at 22.34% 39.07%, rgba(128, 128, 128, 0.8) 3.65%, rgba(128, 128, 128, 0.00216221) 99.99%, rgba(255, 255, 255, 0) 100%);
          backdrop-filter: blur(10px);
-         /* position: relative; */
+        border: 1px solid white;
          height: auto;
          flex-grow: 1;
     }
@@ -694,10 +684,11 @@ hr{
     }
     .rect-content{
         margin-left: 30%;
+        margin-top: 3%;
     }
     .rect-button{
-        margin-bottom: 4%;
-        margin-top: 2%;
+        margin-bottom: 3%;
+        margin-top: 1%;
     }
     .rect-button a{
         padding: 2% 5%;
@@ -705,12 +696,26 @@ hr{
         color: #fff;
         border-radius: 30px;
         cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .rect-button a:hover{
+           background: #fff;
+           color: #009662;
     }
 /*---------------responsive contact-------------------*/
 
 @media screen and (max-width:1240px) {
     .big-div{
         flex-direction: column;
+    }
+    @media screen and (max-width:470px) {
+        .rect-button a{
+            font-size: 10px;
+            padding: 3% 2%;
+
+        }
     }
 }
 
@@ -738,6 +743,11 @@ hr{
         flex-basis: 48%;
         margin-bottom: 20px;
         color: #fff;
+        transition: 0.7s;
+     }
+     .aide-content:hover{
+        box-shadow: 0px 5px 4px 5px rgba(14, 15, 15, 0.25);
+        transform: translateY(-7px);
      }
      .aide-content h4 img{
         margin-right: 1%;
@@ -817,7 +827,7 @@ hr{
         border-radius: 50px;
         height: 300px;
         cursor: pointer;
-        transition: 0.2s;
+        transition: 0.4s;
      }
      .selection-content{
         display: flex;
@@ -854,11 +864,25 @@ hr{
         flex-direction: column;
     }
     .selection-rect{
-        width: 90%;
+        width: 85%;
     }
     .selection-rect img{
         width: 150px;
         height: 100px;
+    }
+    .selection-container{
+        margin-left: 10%;
+    }
+    .selection-rect img{
+        width: 65%;
+    }
+}
+@media screen and (max-width:690px){
+    .writing{
+        font-size: 12px;
+    }
+    .selection-container{
+        margin-left: 15%;
     }
 }
 
